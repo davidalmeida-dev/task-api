@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // Diretórios de entrada e saída
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Ambiente
+    "target": "ES2020",          // Compatível com Node atual
+    "module": "CommonJS",        // Padrão do Node
+    "lib": ["ES2020"],           // Libs JS modernas
+    "types": ["node"],           // Inclui definições de tipos do Node
+
+    // Geração de arquivos auxiliares
+    "sourceMap": true,           // Gera mapas para debug
+    "declaration": true,         // Gera arquivos .d.ts (útil se publicar pacote)
+    "declarationMap": true,
+
+    // Checagens mais seguras
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": false,
+
+    // Performance
+    "skipLibCheck": true,
+
+    // Ajustes extras úteis para backend
+    "esModuleInterop": true,     // Permite importar libs CommonJS (ex: express)
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
